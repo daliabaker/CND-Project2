@@ -87,6 +87,7 @@ def index():
     image_list = [file for file in files if file.lower().endswith(('.jpeg', '.jpg'))]
     
     index_html = """
+    <body style="background-color: green;">
     <form method="post" enctype="multipart/form-data" action="/upload">
       <label for="file">Choose file to upload</label>
       <input type="file" id="file" name="form_file" accept="image/jpeg"/>
